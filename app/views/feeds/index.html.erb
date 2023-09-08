@@ -1,0 +1,23 @@
+<h1>Feeds#index</h1>
+
+<ul>
+  <% @feeds.each do |feed| %>
+    <li>
+      <%= feed.title %>
+    </li>
+  <% end %>
+</ul>
+
+<table>
+  <tr>
+    <th>feed</th>
+    <th>description</th>
+  </tr>
+  <% @feeds.each do |feed| %>
+    <tr>
+      <td><%= link_to feed.title, feed %> </td>
+      <td> <%= feed.description %></td>
+      <br>
+    </tr>
+  <% end %>
+</table>
