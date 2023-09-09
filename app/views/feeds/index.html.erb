@@ -1,12 +1,6 @@
 <h1>Feeds#index</h1>
 
-<ul>
-  <% @feeds.each do |feed| %>
-    <li>
-      <%= feed.title %>
-    </li>
-  <% end %>
-</ul>
+<%= link_to "New Feed", new_feed_path %>
 
 <table>
   <tr>
